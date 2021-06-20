@@ -1,0 +1,42 @@
+<!-- <div class="search-container">
+  <div class="search-form">
+    <span class="logo" routerLink="/">VGDB</span>
+    <div class="search-box">
+      <mat-icon class="search-icon">search</mat-icon>
+      <input
+        type="text"
+        #searchValue
+        class="search-input"
+        name="search"
+        ngModel
+        (keyup.enter)="onEnter(searchValue.value)"
+        placeholder="Search 500,000+ games"
+      />
+    </div>
+  </div>
+</div> -->
+
+<div class="search-container">
+  <div class="search-form">
+    <div class="search-logo">
+      <h1 class="logo" routerLink="/">VGDB</h1>
+    </div>
+    <div class="search-box">
+      <form action="" #form="ngForm" (keyup.Enter)="onSubmit(form)">
+        <i class="fas fa-search search-icon"></i>
+        <input
+          type="text"
+          ngModel
+          class="search-input"
+          placeholder="Search 500,000+ games"
+          name="search"
+        />
+      </form>
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </div>
+</div>
